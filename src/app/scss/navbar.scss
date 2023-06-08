@@ -1,0 +1,236 @@
+// Desktop header
+
+@media (min-width: 951px) {
+  .navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    z-index: 100;
+  }
+
+  .menuhoverbox {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    left: 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 140px;
+    border-radius: 10px;
+  }
+
+  .navbarlogo {
+    position: relative;
+    left: 40px;
+  }
+
+  .logolink {
+    display: block;
+    height: 25px;
+  }
+
+  .navbarul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    text-align: right;
+  }
+
+  .navlink {
+    padding-right: 50px;
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+    font-weight: bold;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+
+    &:hover {
+      color: rgb(55, 107, 250);
+    }
+  }
+
+  .navbarhoverbox {
+    position: relative;
+    background: transparent;
+    height: 0;
+    text-align: right;
+  }
+
+  .hovboxli {
+    list-style: none;
+    padding-top: 15px;
+    padding-right: 50px;
+  }
+
+  .hovlink {
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+    font-size: 15px;
+    font-weight: normal;
+    display: block;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    padding-right: 3px;
+
+    &:hover {
+      color: rgb(255, 255, 255);
+      background-color: rgb(55, 107, 250);
+    }
+  }
+
+  .profileimg {
+    filter: invert(66%) sepia(0%) saturate(0%) hue-rotate(241deg)
+      brightness(91%) contrast(92%);
+    position: relative;
+    padding-right: 50px;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    transform: translateY(2px);
+
+    &:hover {
+      filter: invert(38%) sepia(0%) saturate(0%) hue-rotate(56deg)
+        brightness(100%) contrast(94%);
+    }
+  }
+}
+
+// mobile header
+
+.mobilemenu {
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  vertical-align: middle;
+  width: 72px;
+  height: 72px;
+  top: 0;
+  right: 0;
+}
+
+.mobilemenuicon {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: invert(66%) sepia(0%) saturate(0%) hue-rotate(241deg) brightness(91%)
+    contrast(92%);
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+}
+
+@media (max-width: 950px) {
+  .navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+  }
+
+  .mobilemenu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menuhoverbox {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    left: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 140px;
+    border-radius: 10px;
+  }
+
+  .navbarlogo {
+    position: absolute;
+    left: 16px;
+  }
+
+  .logolink {
+    display: block;
+    height: 25px;
+  }
+
+  .navbarul {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    top: 72px;
+    right: 0;
+  }
+
+  .navbarli {
+    padding-right: 24px;
+  }
+
+  .navlink {
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+    font-weight: bold;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+
+    &:hover {
+      color: rgb(55, 107, 250);
+    }
+  }
+
+  .navbarhoverbox {
+    position: relative;
+    background: transparent;
+    height: 0;
+    text-align: right;
+  }
+
+  .hovboxli {
+    list-style: none;
+    padding-top: 4px;
+  }
+
+  .hovlink {
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+    font-size: 15px;
+    font-weight: normal;
+    display: block;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    padding-right: 3px;
+
+    &:hover {
+      color: rgb(255, 255, 255);
+      background-color: rgb(55, 107, 250);
+    }
+  }
+
+  .profileimg {
+    filter: invert(66%) sepia(0%) saturate(0%) hue-rotate(241deg)
+      brightness(91%) contrast(92%);
+    position: relative;
+    transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    transform: translateY(2px);
+
+    &:hover {
+      filter: invert(38%) sepia(0%) saturate(0%) hue-rotate(56deg)
+        brightness(100%) contrast(94%);
+    }
+  }
+}
