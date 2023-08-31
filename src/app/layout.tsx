@@ -1,5 +1,3 @@
-"use client";
-
 import "@/app/css/globals.css";
 import ScrollToTopButton from "@/app/modules/ScrollToTopButton";
 import Navbar from "@/app/modules/navbar";

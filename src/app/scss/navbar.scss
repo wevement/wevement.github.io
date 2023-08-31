@@ -219,18 +219,4 @@
       background-color: rgb(55, 107, 250);
     }
   }
-
-  .profileimg {
-    filter: invert(66%) sepia(0%) saturate(0%) hue-rotate(241deg)
-      brightness(91%) contrast(92%);
-    position: relative;
-    transition: all 0.1s linear;
-    -webkit-transition: all 0.1s linear;
-    transform: translateY(2px);
-
-    &:hover {
-      filter: invert(38%) sepia(0%) saturate(0%) hue-rotate(56deg)
-        brightness(100%) contrast(94%);
-    }
-  }
 }

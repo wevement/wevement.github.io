@@ -3,10 +3,9 @@
 import "@/app/css/mainPage.css";
 import Deco from "@/app/modules/contentdecoration";
 
-import { useSpring, animated, easings } from "@react-spring/web";
+import { useSpring, animated, easings, useInView } from "@react-spring/web";
 import { useState, useEffect } from "react";
 import { useGesture } from "@use-gesture/react";
-import { useRef } from "react";
 
 export default function Home() {
   // js
@@ -66,16 +65,41 @@ export default function Home() {
     delay: 700,
   });
 
+  const [inViewRef1, inView1] = useInView(
+    () => ({
+      from: { opacity: 0, transform: "translateY(200px)" },
+      to: { opacity: 1, transform: "translateY(0)" },
+      config: { duration: 800, easing: easings.easeOutCirc },
+    }),
+    { once: true }
+  );
+  const [inViewRef2, inView2] = useInView(
+    () => ({
+      from: { opacity: 0, transform: "translateY(200px)" },
+      to: { opacity: 1, transform: "translateY(0)" },
+      config: { duration: 800, easing: easings.easeOutCirc },
+    }),
+    { once: true }
+  );
+  const [inViewRef3, inView3] = useInView(
+    () => ({
+      from: { opacity: 0, transform: "translateY(200px)" },
+      to: { opacity: 1, transform: "translateY(0)" },
+      config: { duration: 800, easing: easings.easeOutCirc },
+    }),
+    { once: true }
+  );
+
   // web
   return (
     <animated.div>
       <div className="content">
-        <div className="main_intro">
-          <animated.div className="main_intro_text">
-            <animated.h1 className="intro_h1" style={textfade}>
+        <div className="main_door">
+          <animated.div className="main_door_text">
+            <animated.h1 className="door_h1" style={textfade}>
               무언가 텍스트
             </animated.h1>
-            <animated.h2 className="intro_h2" style={textfade2}>
+            <animated.h2 className="door_h2" style={textfade2}>
               위브먼트
             </animated.h2>
           </animated.div>
@@ -90,9 +114,13 @@ export default function Home() {
           </animated.div>
           <Deco />
         </div>
-        <div className="intro_separater"></div>
+        <div className="door_separater"></div>
         <div className="main_info">
-          <div className="info_content_box">
+          <animated.div
+            className="info_content_box"
+            style={inView1}
+            ref={inViewRef1}
+          >
             <div className="info_content_box_text">
               <h1 className="info_content_h1">대충 무슨 어떠한 주제</h1>
               <div className="info_content_text_separater"></div>
@@ -105,8 +133,12 @@ export default function Home() {
               대충 이미지
               <animated.img className="info_content_box_image_example" />
             </div>
-          </div>
-          <div className="info_content_box">
+          </animated.div>
+          <animated.div
+            className="info_content_box"
+            style={inView2}
+            ref={inViewRef2}
+          >
             <div className="info_content_box_image">
               대충 이미지
               <animated.img className="info_content_box_image_example" />
@@ -119,8 +151,12 @@ export default function Home() {
                 대충 이 주제에 대한 설명 대충 이 주제에 대한 설명{" "}
               </p>
             </div>
-          </div>
-          <div className="info_content_box">
+          </animated.div>
+          <animated.div
+            className="info_content_box"
+            style={inView3}
+            ref={inViewRef3}
+          >
             <div className="info_content_box_text">
               <h1 className="info_content_h1">대충 무슨 어떠한 주제</h1>
               <div className="info_content_text_separater"></div>
@@ -133,10 +169,12 @@ export default function Home() {
               대충 이미지
               <animated.img className="info_content_box_image_example" />
             </div>
-          </div>
+          </animated.div>
         </div>
         <div className="info_separater"></div>
-        <div className="main_something"></div>
+        <div className="">
+          <div></div>
+        </div>
       </div>
     </animated.div>
   );

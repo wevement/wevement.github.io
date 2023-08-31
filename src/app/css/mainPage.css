@@ -2,7 +2,7 @@
   padding-top: 100px;
 }
 
-.main_intro {
+.main_door {
   position: relative;
   height: 1000px;
   max-width: 1200px;
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
 }
-.main_intro_text {
+.main_door_text {
   position: absolute;
   top: 350px;
   left: 110px;
@@ -20,17 +20,17 @@
   transform: perspective(500px) rotateY(5deg) rotateZ(2deg);
 }
 
-.intro_h1 {
+.door_h1 {
   display: block;
   font-size: 75px;
   font-weight: bold;
 }
-.intro_h2 {
+.door_h2 {
   font-size: 50px;
   font-weight: bold;
   text-align: right;
 }
-.intro_separater {
+.door_separater {
   position: relative;
   left: -20px;
   width: 110%;
@@ -123,7 +123,7 @@
   z-index: 2;
 }
 
-.main_something {
+.current_project {
   position: relative;
   height: 1000px;
   max-width: 1200px;
@@ -133,6 +133,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 /*# sourceMappingURL=mainPage.css.map */

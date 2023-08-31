@@ -72,7 +72,13 @@ export default function Navbar() {
     <animated.div id="navbarid" className="navbar" style={pagenavfade}>
       <animated.div className="menuhoverbox" style={hoverbox}></animated.div>
       <div className="navbarlogo">
-        <Link href="/" className="logolink">
+        <Link
+          href="/"
+          className="logolink"
+          onClick={(event) => {
+            event.preventDefault();
+          }}
+        >
           <animated.img
             className="logoblack"
             src="/wevement_logo_variation/wevement_logo_type_only.png"
@@ -94,24 +100,48 @@ export default function Navbar() {
       {/* @ts-expect-error */}
       <animated.ul className="navbarul" style={mobilemenufade}>
         <li className="navbarli" {...hoverbind()}>
-          <Link className="navlink" href="/notice">
+          <Link
+            className="navlink"
+            href="/notice"
+            onClick={(event) => {
+              event.preventDefault();
+            }}
+          >
             Notice
           </Link>
         </li>
         <li className="navbarli" {...hoverbind()}>
-          <Link className="navlink" href="/info">
+          <Link
+            className="navlink"
+            href="/info"
+            onClick={(event) => {
+              event.preventDefault();
+            }}
+          >
             Information
           </Link>
           {/* @ts-expect-error */}
           <animated.div className="navbarhoverbox" style={menufade}>
             <ul className="hovboxul">
               <li className="hovboxli">
-                <Link className="hovlink" href="/info/about">
+                <Link
+                  className="hovlink"
+                  href="/info/about"
+                  onClick={(event) => {
+                    event.preventDefault();
+                  }}
+                >
                   About
                 </Link>
               </li>
               <li className="hovboxli">
-                <Link className="hovlink" href="/info/members">
+                <Link
+                  className="hovlink"
+                  href="/info/members"
+                  onClick={(event) => {
+                    event.preventDefault();
+                  }}
+                >
                   Members
                 </Link>
               </li>
@@ -119,34 +149,42 @@ export default function Navbar() {
           </animated.div>
         </li>
         <li className="navbarli" {...hoverbind()}>
-          <Link className="navlink" href="/promotion">
+          <Link
+            className="navlink"
+            href="/promotion"
+            onClick={(event) => {
+              event.preventDefault();
+            }}
+          >
             Promotion
           </Link>
           {/* @ts-expect-error */}
           <animated.div className="navbarhoverbox" style={menufade}>
             <ul className="hovboxul">
               <li className="hovboxli">
-                <Link className="hovlink" href="/promotion/products">
+                <Link
+                  className="hovlink"
+                  href="/promotion/products"
+                  onClick={(event) => {
+                    event.preventDefault();
+                  }}
+                >
                   Products
                 </Link>
               </li>
               <li className="hovboxli">
-                <Link className="hovlink" href="/promotion/recruit">
+                <Link
+                  className="hovlink"
+                  href="/promotion/recruit"
+                  onClick={(event) => {
+                    event.preventDefault();
+                  }}
+                >
                   Recruit
                 </Link>
               </li>
             </ul>
           </animated.div>
-        </li>
-        <li className="navbarli" {...hoverbind()}>
-          <Link href="/profile">
-            <animated.img
-              className="profileimg"
-              src="/icons/user.png"
-              alt="profile"
-              width={30}
-            />
-          </Link>
         </li>
       </animated.ul>
     </animated.div>
