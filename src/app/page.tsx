@@ -4,7 +4,7 @@ import "@/app/css/mainPage.css";
 import Deco from "@/app/modules/contentdecoration";
 
 import { useSpring, animated, easings, useInView } from "@react-spring/web";
-import { useState, useEffect } from "react";
+import { useState, useEffect, use, CSSProperties } from "react";
 import { useGesture } from "@use-gesture/react";
 
 export default function Home() {
@@ -52,14 +52,14 @@ export default function Home() {
   });
 
   const textfade = useSpring({
-    from: { opacity: 0, transform: "translateX(80px) " },
+    from: { opacity: 0, transform: "translateX(80px)" },
     to: { opacity: 1, transform: "translateX(0)" },
     config: { duration: 1000, easing: easings.easeOutCirc },
     delay: 500,
   });
 
   const textfade2 = useSpring({
-    from: { opacity: 0, transform: "translateX(80px) " },
+    from: { opacity: 0, transform: "translateX(80px)" },
     to: { opacity: 1, transform: "translateY(0)" },
     config: { duration: 1000, easing: easings.easeOutCirc },
     delay: 700,
@@ -90,12 +90,56 @@ export default function Home() {
     { once: true }
   );
 
+  const [doorfontSize, setdoorFontSize] = useState<number>(1000);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const parent = document.querySelector(".main_door");
+      const parentheight = parent?.clientHeight || 0;
+
+      setdoorFontSize(parentheight);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const doorfontsize: CSSProperties = {
+    fontSize: `${doorfontSize}px`,
+  };
+
+  const [infofontSize, setinfoFontSize] = useState<number>(1000);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const parent = document.querySelector(".main_info");
+      const parentwidth = parent?.clientWidth || 0;
+
+      setinfoFontSize(parentwidth);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const infofontsize: CSSProperties = {
+    fontSize: `${infofontSize}px`,
+  };
+
   // web
   return (
-    <animated.div>
+    <div>
       <div className="content">
         <div className="main_door">
-          <animated.div className="main_door_text">
+          <animated.div className="main_door_text" style={doorfontsize}>
             <animated.h1 className="door_h1" style={textfade}>
               무언가 텍스트
             </animated.h1>
@@ -109,7 +153,7 @@ export default function Home() {
               src="/wevement_logo_variation/wevement_logo_simbol_only.png"
               alt="contentlogoblack"
               style={spring}
-              height={400}
+              height={"80%"}
             />
           </animated.div>
           <Deco />
@@ -121,7 +165,7 @@ export default function Home() {
             style={inView1}
             ref={inViewRef1}
           >
-            <div className="info_content_box_text">
+            <div className="info_content_box_text" style={infofontsize}>
               <h1 className="info_content_h1">대충 무슨 어떠한 주제</h1>
               <div className="info_content_text_separater"></div>
               <p className="info_content_p">
@@ -143,7 +187,7 @@ export default function Home() {
               대충 이미지
               <animated.img className="info_content_box_image_example" />
             </div>
-            <div className="info_content_box_text">
+            <div className="info_content_box_text" style={infofontsize}>
               <h1 className="info_content_h1">대충 무슨 어떠한 주제</h1>
               <div className="info_content_text_separater"></div>
               <p className="info_content_p">
@@ -157,7 +201,7 @@ export default function Home() {
             style={inView3}
             ref={inViewRef3}
           >
-            <div className="info_content_box_text">
+            <div className="info_content_box_text" style={infofontsize}>
               <h1 className="info_content_h1">대충 무슨 어떠한 주제</h1>
               <div className="info_content_text_separater"></div>
               <p className="info_content_p">
@@ -172,10 +216,12 @@ export default function Home() {
           </animated.div>
         </div>
         <div className="info_separater"></div>
-        <div className="">
-          <div></div>
+        <div className="main_notice">
+          <div>
+            <h1>공지사항</h1>
+          </div>
         </div>
       </div>
-    </animated.div>
+    </div>
   );
 }

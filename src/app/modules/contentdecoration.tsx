@@ -5,7 +5,7 @@ export default function contentdeco() {
 
   //web
   return (
-    <div>
+    <div className="box">
       <div className="contentdeco1"></div>
       <div className="contentdeco2"></div>
       <div className="contentdeco3"></div>
