@@ -72,7 +72,7 @@ export default function Footer() {
               </Link>
             </li>
             <li className="footerlistitem">
-              <Link href="/" className="footerlistlink">
+              <Link href="/privacy" className="footerlistlink">
                 개인정보처리방침
               </Link>
             </li>

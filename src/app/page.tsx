@@ -217,9 +217,7 @@ export default function Home() {
         </div>
         <div className="info_separater"></div>
         <div className="main_notice">
-          <div>
-            <h1>공지사항</h1>
-          </div>
+          <div>{/* <h1>공지사항</h1> */}</div>
         </div>
       </div>
     </div>
