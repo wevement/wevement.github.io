@@ -6,10 +6,11 @@ export default function privacy()
   return (
     <div>
       <div className="content">
-        <p className="ls2" lh6="" bs5="" ts4="">
-          <em className="emphasis"
-          >&lt; 위브먼트 &gt;('https://www.wevement.com'이하 'wevement')</em
-          >은(는) 「개인정보 보호법」 제30조에 따라 정보주체의 개인정보를 보호하고
+        <p className="ls2" >
+          <em className="emphasis">
+            &lt; 위브먼트 &gt;(&apos;https://www.wevement.com&apos;이하 &apos;wevement&apos;)
+          </em>
+          은(는) 「개인정보 보호법」 제30조에 따라 정보주체의 개인정보를 보호하고
           이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과
           같이 개인정보 처리방침을 수립·공개합니다.
         </p>
@@ -21,12 +22,12 @@ export default function privacy()
         <p className="lh6 bs4">
           <strong
           >제1조(개인정보의 처리 목적)<br /><br /><em className="emphasis"
-          >&lt; 위브먼트 &gt;('https://www.wevement.com'이하 'wevement')</em
-            >은(는) 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는
+          >&lt; 위브먼트 &gt;(&apos;https://www.wevement.com&apos;이하 &apos;wevement&apos;)</em>
+            은(는) 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는
             개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며 이용 목적이
             변경되는 경우에는 「개인정보 보호법」 제18조에 따라 별도의 동의를 받는
-            등 필요한 조치를 이행할 예정입니다.</strong
-          >
+            등 필요한 조치를 이행할 예정입니다.</strong>
+
         </p>
         <ul className="list_indent2 mgt10">
           <p className="ls2">1. 홈페이지 회원가입 및 관리</p>
@@ -68,7 +69,8 @@ export default function privacy()
           </li>
           <li>보유근거 : 소비자의 불만 또는 분쟁처리에 관한 기록</li>
           <li>
-            관련법령 : 1)표시/광고에 관한 기록 : 6개월<br />2) 소비자의 불만 또는
+            관련법령 : 1)표시/광고에 관한 기록 : 6개월<br />
+            2) 소비자의 불만 또는
             분쟁처리에 관한 기록 : 3년<br />
           </li>
           <li>예외사유 :</li>
@@ -147,14 +149,14 @@ export default function privacy()
           >&lt; 위브먼트 &gt;은(는) 개인정보를 제1조(개인정보의 처리 목적)에서
             명시한 범위 내에서만 처리하며, 정보주체의 동의, 법률의 특별한 규정 등
             「개인정보 보호법」 제17조 및 제18조에 해당하는 경우에만 개인정보를
-            제3자에게 제공합니다.</em
-          >
+            제3자에게 제공합니다.</em>
+
         </p>
         <p className="sub_p mgt10">
           <em className="emphasis"
           >② <span className="colorLightBlue">&lt; 위브먼트 &gt;</span>은(는) 다음과
-            같이 개인정보를 제3자에게 제공하고 있습니다.</em
-          >
+            같이 개인정보를 제3자에게 제공하고 있습니다.</em>
+
         </p>
         <ul className="list_indent2 mgt10">
           <li className="tt"><em className="emphasis">1. &lt; 위브먼트 &gt;</em></li>
@@ -162,8 +164,8 @@ export default function privacy()
           <li>
             <em className="emphasis"
             >제공받는 자의 개인정보 이용목적 : 이름, 생년월일, 성별, 로그인ID,
-              비밀번호, 비밀번호 질문과 답, 휴대전화번호, 이메일</em
-            >
+              비밀번호, 비밀번호 질문과 답, 휴대전화번호, 이메일</em>
+
           </li>
           <li><em className="emphasis">제공받는 자의 보유.이용기간: 3년</em></li>
         </ul>
@@ -192,16 +194,16 @@ export default function privacy()
           <p className="sub_p">
             <em className="emphasis"
             >전자적 파일 형태의 정보는 기록을 재생할 수 없는 기술적 방법을
-              사용합니다</em
-            >
+              사용합니다</em>
+
           </p>
           <em className="emphasis"
           ><br /><br />
             <p className="lh6 bs4">
               <strong
               >제8조(정보주체와 법정대리인의 권리·의무 및 그 행사방법에 관한
-                사항)</strong
-              >
+                사항)</strong>
+
             </p>
             <p className="ls2">
               <br /><br />① 정보주체는 위브먼트에 대해 언제든지 개인정보
@@ -234,10 +236,10 @@ export default function privacy()
             <p className="lh6 bs4">
               <strong
               >제9조(개인정보의 안전성 확보조치에 관한 사항)<em className="emphasis"
-              ><br /><br />&lt; 위브먼트 &gt;</em
-                >은(는) 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고
-                있습니다.</strong
-              >
+              ><br /><br />&lt; 위브먼트 &gt;</em>
+                은(는) 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고
+                있습니다.</strong>
+
             </p>
             <p className="sub_p mgt10">
               1. 내부관리계획의 수립 및 시행<br />
@@ -259,9 +261,9 @@ export default function privacy()
               본인만이 알 수 있으며 중요한 데이터는 파일 및 전송 데이터를 암호화
               하거나 파일 잠금 기능을 사용하는 등의 별도 보안기능을 사용하고
               있습니다.<br /><br />6. 해킹 등에 대비한 기술적 대책<br />
-              &lt;<em className="emphasis">위브먼트</em>&gt;('<em className="emphasis"
-              >wevement</em
-              >')은 해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기
+              &lt;<em className="emphasis">위브먼트</em>&gt;(&apos;<em className="emphasis"
+              >wevement</em>
+              &apos;)은 해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기
               위하여 보안프로그램을 설치하고 주기적인 갱신·점검을 하며 외부로부터
               접근이 통제된 구역에 시스템을 설치하고 기술적/물리적으로 감시 및
               차단하고 있습니다.<br /><br />
@@ -270,8 +272,8 @@ export default function privacy()
             <p className="lh6 bs4">
               <strong
               >제10조(개인정보를 자동으로 수집하는 장치의 설치·운영 및 그 거부에
-                관한 사항)</strong
-              >
+                관한 사항)</strong>
+
             </p>
             <p className="ls2">
               <br /><br />위브먼트 은(는) 정보주체의 이용정보를 저장하고 수시로
@@ -279,8 +281,8 @@ export default function privacy()
             </p>
             <p className="lh6 bs4">
               <strong
-              >제11조(행태정보의 수집·이용·제공 및 거부 등에 관한 사항)</strong
-              >
+              >제11조(행태정보의 수집·이용·제공 및 거부 등에 관한 사항)</strong>
+
             </p>
             <p className="ls2">
               <br /><br />① &lt;개인정보처리자&gt;은(는) 서비스 이용과정에서
@@ -395,7 +397,7 @@ export default function privacy()
               섹션에서 ‘추적방지’ 여부 및 수준을 선택합니다.
             </p>
             <p className="sub_p">
-              - ‘InPrivate를 검색할 때 항상 ""엄격"" 추적 방지 사용’ 여부를
+              - ‘InPrivate를 검색할 때 항상 &quot;&quot;엄격&quot;&quot; 추적 방지 사용’ 여부를
               선택합니다.
             </p>
             <p className="sub_p">
@@ -428,40 +430,40 @@ export default function privacy()
               <strong
               >제12조(추가적인 이용·제공 판단기준)<em
                 className="emphasis"
-              ></em></strong
-              ><em className="emphasis"
+              ></em></strong>
+              <em className="emphasis"
               ><br /><br />&lt; 위브먼트 &gt; 은(는) ｢개인정보 보호법｣ 제15조제3항
                 및 제17조제4항에 따라 ｢개인정보 보호법 시행령｣ 제14조의2에 따른
                 사항을 고려하여 정보주체의 동의 없이 개인정보를 추가적으로
                 이용·제공할 수 있습니다. 이에 따라 &lt; 위브먼트 &gt; 가(이)
                 정보주체의 동의 없이 추가적인 이용·제공을 하기 위해서 다음과 같은
                 사항을 고려하였습니다.<br />▶ 개인정보를 추가적으로 이용·제공하려는
-                목적이 당초 수집 목적과 관련성이 있는지 여부</em
-              >
+                목적이 당초 수집 목적과 관련성이 있는지 여부</em>
+
             </p>
             <p className="sub_p"></p>
             <p className="sub_p"></p>
             <p className="sub_p">
               <em className="emphasis"
               >▶ 개인정보를 수집한 정황 또는 처리 관행에 비추어 볼 때 추가적인
-                이용·제공에 대한 예측 가능성이 있는지 여부</em
-              >
+                이용·제공에 대한 예측 가능성이 있는지 여부</em>
+
             </p>
             <p className="sub_p"></p>
             <p className="sub_p"></p>
             <p className="sub_p">
               <em className="emphasis"
               >▶ 개인정보의 추가적인 이용·제공이 정보주체의 이익을 부당하게
-                침해하는지 여부</em
-              >
+                침해하는지 여부</em>
+
             </p>
             <p className="sub_p"></p>
             <p className="sub_p"></p>
             <p className="sub_p">
               <em className="emphasis"
               >▶ 가명처리 또는 암호화 등 안전성 확보에 필요한 조치를 하였는지
-                여부</em
-              >
+                여부</em>
+
             </p>
             <p className="sub_p"></p>
             <p className="sub_p"></p>
@@ -471,19 +473,19 @@ export default function privacy()
             <p className="sub_p">
               <em className="emphasis"
               >※ 추가적인 이용·제공 시 고려사항에 대한 판단기준은 사업자/단체
-                스스로 자율적으로 판단하여 작성·공개함</em
-              >
+                스스로 자율적으로 판단하여 작성·공개함</em>
+
             </p>
             <em className="emphasis"
             ><br /><br />
               <p className="lh6 bs4">
                 <strong
                 >제13조(가명정보를 처리하는 경우 가명정보 처리에 관한
-                  사항)</strong
-                ><em className="emphasis"
+                  사항)</strong>
+                <em className="emphasis"
                 ><br /><br />&lt; 위브먼트 &gt; 은(는) 다음과 같은 목적으로
-                  가명정보를 처리하고 있습니다.</em
-                >
+                  가명정보를 처리하고 있습니다.</em>
+
               </p>
               <p className="sub_p"></p>
               <p className="sub_p"><em className="emphasis">▶ 가명정보의 처리 목적</em></p>
@@ -496,15 +498,15 @@ export default function privacy()
               <p className="sub_p"></p>
               <p className="sub_p">
                 <em className="emphasis"
-                >▶ 가명정보의 제3자 제공에 관한 사항(해당되는 경우에만 작성)</em
-                >
+                >▶ 가명정보의 제3자 제공에 관한 사항(해당되는 경우에만 작성)</em>
+
               </p>
               <p className="sub_p"><em className="emphasis">- 직접작성 가능합니다. </em></p>
               <p className="sub_p"></p>
               <p className="sub_p">
                 <em className="emphasis"
-                >▶ 가명정보 처리의 위탁에 관한 사항(해당되는 경우에만 작성)</em
-                >
+                >▶ 가명정보 처리의 위탁에 관한 사항(해당되는 경우에만 작성)</em>
+
               </p>
               <p className="sub_p"><em className="emphasis">- 직접작성 가능합니다. </em></p>
               <p className="sub_p"></p>
@@ -516,29 +518,29 @@ export default function privacy()
               <p className="sub_p">
                 <em className="emphasis"
                 >▶ 법 제28조의4(가명정보에 대한 안전조치 의무 등)에 따른
-                  가명정보의 안전성 확보조치에 관한 사항</em
-                >
+                  가명정보의 안전성 확보조치에 관한 사항</em>
+
               </p>
               <p className="sub_p"><em className="emphasis">- 직접작성 가능합니다. </em></p>
               <p className="sub_p"></p>
               <p className="sub_p"></p>
               <p className="sub_p mgt30">
                 <em className="emphasis"
-                ><strong>제14조 (개인정보 보호책임자에 관한 사항) </strong></em
-                >
+                ><strong>제14조 (개인정보 보호책임자에 관한 사항) </strong></em>
+
               </p>
               <p className="sub_p mgt10">
                 <em className="emphasis">
                   ① <span className="colorLightBlue">위브먼트</span> 은(는) 개인정보
                   처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한
                   정보주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보
-                  보호책임자를 지정하고 있습니다.</em
-                >
+                  보호책임자를 지정하고 있습니다.</em>
+
               </p>
               <ul className="list_indent2 mgt10">
                 <li className="tt"><em className="emphasis">▶ 개인정보 보호책임자 </em></li>
                 <li><em className="emphasis">성명 :이인호</em></li>
-                <li><em className="emphasis">직책 :CEO</em></li>
+                <li><em className="emphasis">직책 :CEO</em></li>
                 <li><em className="emphasis">직급 :대표</em></li>
                 <li><em className="emphasis">연락처 :kbs@kakao.com </em></li>
               </ul>
@@ -551,8 +553,8 @@ export default function privacy()
                       <strong
                       >제17조(정보주체의 권익침해에 대한 구제방법)<em
                         className="emphasis"
-                      ></em
-                        ></strong>
+                      ></em>
+                      </strong>
                     </p>
                     <br /><br />정보주체는 개인정보침해로 인한 구제를 받기 위하여
                     개인정보분쟁조정위원회, 한국인터넷진흥원 개인정보침해신고센터
@@ -580,8 +582,8 @@ export default function privacy()
                     바랍니다.<br /><br />
                     <p className="lh6 bs4">
                       <strong
-                      >제19조(개인정보 처리방침 변경)<em className="emphasis"></em
-                      ></strong>
+                      >제19조(개인정보 처리방침 변경)<em className="emphasis"></em>
+                      </strong>
                     </p>
                     <br />
                     <p></p>
@@ -590,10 +592,10 @@ export default function privacy()
                     </p>
                     <p className="sub_p"></p>
                     <p className="sub_p"></p>
-                    <p className="sub_p"></p
-                    ></em>
-                </li></ul></em></em
-          ></em>
+                    <p className="sub_p"></p>
+                  </em>
+                </li></ul></em></em>
+        </em>
       </div>
     </div>
   );

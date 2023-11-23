@@ -1,7 +1,13 @@
+import dynamic from "next/dynamic";
+
 import "@/app/css/globals.css";
 import ScrollToTopButton from "@/app/modules/ScrollToTopButton";
-import Navbar from "@/app/modules/navbar";
-import Footer from "@/app/modules/footer";
+
+const Navbar = dynamic(() => import("@/app/modules/navbar"), { ssr: false });
+const Footer = dynamic(() => import("@/app/modules/footer"), { ssr: false });
+
+// import Navbar from "@/app/modules/navbar";
+// import Footer from "@/app/modules/footer";
 
 import { Inter } from "next/font/google";
 
@@ -16,7 +22,8 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
+})
+{
   // js
 
   // web

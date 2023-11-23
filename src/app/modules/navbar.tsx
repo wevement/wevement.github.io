@@ -7,18 +7,23 @@ import { useSpring, animated, easings } from "@react-spring/web";
 import { useHover } from "@use-gesture/react";
 import { useState } from "react";
 
-export default function Navbar() {
+
+export default function Navbar()
+{
   // js
 
   const [isHovered, setIsHovered] = useState(false);
   const [menuToggled, setMenuToggled] = useState(false);
   const [isDesktop, setisDesktop] = useState(false);
 
-  const hoverbind = useHover(({ hovering }) => {
-    if (hovering) {
+  const hoverbind = useHover(({ hovering }) =>
+  {
+    if (hovering)
+    {
       setIsHovered(true);
       console.log("hovering");
-    } else {
+    } else
+    {
       setIsHovered(false);
       console.log("not hovering");
     }
@@ -49,19 +54,25 @@ export default function Navbar() {
     config: { duration: 500, easing: easings.easeOutCirc },
   });
 
-  window.addEventListener("resize", () => {
-    if (window.innerWidth < 951) {
+  window.addEventListener("resize", () =>
+  {
+    if (window.innerWidth < 951)
+    {
       setisDesktop(false);
-    } else {
+    } else
+    {
       setisDesktop(true);
       setMenuToggled(false);
     }
   });
 
-  window.onload = () => {
-    if (window.innerWidth < 951) {
+  window.onload = () =>
+  {
+    if (window.innerWidth < 951)
+    {
       setisDesktop(false);
-    } else {
+    } else
+    {
       setisDesktop(true);
       setMenuToggled(false);
     }
@@ -75,7 +86,8 @@ export default function Navbar() {
         <Link
           href="/"
           className="logolink"
-          onClick={(event) => {
+          onClick={(event) =>
+          {
             event.preventDefault();
           }}
         >
@@ -103,7 +115,8 @@ export default function Navbar() {
           <Link
             className="navlink"
             href="/notice"
-            onClick={(event) => {
+            onClick={(event) =>
+            {
               event.preventDefault();
             }}
           >
@@ -114,7 +127,8 @@ export default function Navbar() {
           <Link
             className="navlink"
             href="/info"
-            onClick={(event) => {
+            onClick={(event) =>
+            {
               event.preventDefault();
             }}
           >
@@ -127,7 +141,8 @@ export default function Navbar() {
                 <Link
                   className="hovlink"
                   href="/info/about"
-                  onClick={(event) => {
+                  onClick={(event) =>
+                  {
                     event.preventDefault();
                   }}
                 >
@@ -138,7 +153,8 @@ export default function Navbar() {
                 <Link
                   className="hovlink"
                   href="/info/members"
-                  onClick={(event) => {
+                  onClick={(event) =>
+                  {
                     event.preventDefault();
                   }}
                 >
@@ -152,7 +168,8 @@ export default function Navbar() {
           <Link
             className="navlink"
             href="/promotion"
-            onClick={(event) => {
+            onClick={(event) =>
+            {
               event.preventDefault();
             }}
           >
@@ -165,7 +182,8 @@ export default function Navbar() {
                 <Link
                   className="hovlink"
                   href="/promotion/products"
-                  onClick={(event) => {
+                  onClick={(event) =>
+                  {
                     event.preventDefault();
                   }}
                 >
@@ -176,7 +194,8 @@ export default function Navbar() {
                 <Link
                   className="hovlink"
                   href="/promotion/recruit"
-                  onClick={(event) => {
+                  onClick={(event) =>
+                  {
                     event.preventDefault();
                   }}
                 >
