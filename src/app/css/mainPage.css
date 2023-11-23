@@ -98,6 +98,12 @@
   font-weight: bold;
   text-shadow: 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
+.info_content_box_image_example {
+  height: 80%;
+}
+.info_content_box_image_example2 {
+  height: 110%;
+}
 .info_content_h1 {
   font-size: 0.0266666667em;
   font-weight: bold;
