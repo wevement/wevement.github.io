@@ -2,14 +2,12 @@
 	"name": "new-wevement",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://wevement.github.io/",
+	"homepage": "https://www.wevement.com/",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
-		"predeploy": "npm run build",
-		"deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+		"lint": "next lint"
 	},
 	"dependencies": {
 		"@nestjs/config": "^3.0.0",
