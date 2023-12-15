@@ -1,44 +1,48 @@
 {
-  "name": "new-wevement",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@nestjs/config": "^3.0.0",
-    "@types/node": "20.2.3",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
-    "@use-gesture/react": "^10.2.27",
-    "autoprefixer": "10.4.14",
-    "cors": "^2.8.5",
-    "eslint": "8.41.0",
-    "eslint-config-next": "13.4.3",
-    "express": "^4.18.2",
-    "mariadb": "^3.1.2",
-    "mysql": "^2.18.1",
-    "mysql2": "^3.4.0",
-    "net": "^1.0.2",
-    "next": "13.4.3",
-    "postcss": "8.4.23",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-spring": "^9.7.1",
-    "tailwindcss": "3.3.2",
-    "tls": "^0.0.1",
-    "typescript": "5.0.4"
-  },
-  "devDependencies": {
-    "@types/mysql": "^2.15.21",
-    "@types/pg": "^8.10.1"
-  },
-  "browser": {
-    "fs": false,
-    "os": false,
-    "path": false
-  }
+	"name": "new-wevement",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://wevement.github.io/",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"predeploy": "npm run build",
+		"deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+	},
+	"dependencies": {
+		"@nestjs/config": "^3.0.0",
+		"@types/node": "20.2.3",
+		"@types/react": "18.2.6",
+		"@types/react-dom": "18.2.4",
+		"@use-gesture/react": "^10.2.27",
+		"autoprefixer": "10.4.14",
+		"cors": "^2.8.5",
+		"eslint": "8.41.0",
+		"eslint-config-next": "13.4.3",
+		"express": "^4.18.2",
+		"mariadb": "^3.1.2",
+		"mysql": "^2.18.1",
+		"mysql2": "^3.4.0",
+		"net": "^1.0.2",
+		"next": "13.4.3",
+		"postcss": "8.4.23",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-spring": "^9.7.1",
+		"tailwindcss": "3.3.2",
+		"tls": "^0.0.1",
+		"typescript": "5.0.4"
+	},
+	"devDependencies": {
+		"@types/mysql": "^2.15.21",
+		"@types/pg": "^8.10.1",
+		"gh-pages": "^6.1.0"
+	},
+	"browser": {
+		"fs": false,
+		"os": false,
+		"path": false
+	}
 }
